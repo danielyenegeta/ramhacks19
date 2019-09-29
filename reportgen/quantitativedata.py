@@ -156,5 +156,3 @@ def main(symbol=None):
     time_data = make_df(symbol)[1]
     related_time_series.to_csv("training.csv", index=False)
     time_data.to_csv('time_data.csv',index=False)
-
-main('amzn')

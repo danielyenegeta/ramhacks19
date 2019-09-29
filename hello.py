@@ -1,6 +1,7 @@
 from flask import Flask, render_template, send_from_directory
 from flask_sqlalchemy import SQLAlchemy
 import boto3, botocore
+import driver
 
 app = Flask(__name__, static_folder="static", template_folder="templates")
 app.config.from_object('config')
@@ -22,17 +23,18 @@ def whomadethis():
 @app.route('/getreport/<filename>/')
 def download(filename):
     BUCKET_NAME = 'danielyenegeta.com' # replace with your bucket name
-    KEY = filename+".txt" # replace with your object key
+    driver.main(filename)
+    KEY = filename+".pdf" # replace with your object key
 
-    s3 = boto3.resource('s3')
-
-    try:
-        s3.Bucket(BUCKET_NAME).download_file(KEY, filename+'report.txt')
-    except botocore.exceptions.ClientError as e:
-        if e.response['Error']['Code'] == "404":
-            print("The object does not exist.")
-        else:
-            raise
+    # s3 = boto3.resource('s3')
+    #
+    # try:
+    #     s3.Bucket(BUCKET_NAME).download_file(KEY, filename+'report.txt')
+    # except botocore.exceptions.ClientError as e:
+    #     if e.response['Error']['Code'] == "404":
+    #         print("The object does not exist.")
+    #     else:
+    #         raise
     return render_template('/home.html')
 
 if __name__ == '__main__':

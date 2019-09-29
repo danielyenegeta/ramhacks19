@@ -23,8 +23,14 @@ def whomadethis():
 @app.route('/getreport/<filename>/')
 def download(filename):
     BUCKET_NAME = 'danielyenegeta.com' # replace with your bucket name
-    driver.main(filename)
-    KEY = filename+".pdf" # replace with your object key
+    # driver.main(filename)
+    KEY = filename+".txt" # replace with your object key
+
+    # Create an S3 client
+    s3 = boto3.client('s3')
+    # Uploads the given file using a managed uploader, which will split up large
+    # files automatically and upload parts in parallel.
+    s3.upload_file(KEY, BUCKET_NAME, KEY)
 
     # s3 = boto3.resource('s3')
     #

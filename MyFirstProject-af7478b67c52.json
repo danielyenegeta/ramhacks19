@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "astute-age-254400",
+  "private_key_id": "af7478b67c5242a6157b4361d1da0224db840bb9",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDGhN17RNS2zrw0\nLLPJrcvhH/Hhs83xYaRWzPWAhqK/k5zpjhausDNAFfmfSojfjqSao6tZW/Swwy/O\nKBO3GVzI5qAdK3UnDoWYBK+1dafzosuRmb4UbvhLh/BaiGdV4sFoobFASt4X0m19\nft0mBVn5YhmZa8rrFcOGYtXf8ujnrUtzLTCEIvvCQdH1UXxF8t40kw/0WXpZAbLS\nytYeiD5g+2gipHJlzgBOZSct+ygxq0OmYaSezi4hBageXpuCVD626bB55By5ZyOE\nK23bt46hw1muqwRepgzr6bIkSoTylNZEybjPoSPuHh+LFs+3abAMif67hr6HpICh\n1YI3rSCJAgMBAAECggEABITYv9TDcifcQTnKm+rWCxldjwbh8hPdbaZmaOxnqaxp\nXtL/sYP29AdWsn68BTlrhiOh+RDuoylw809BPPfu/0RqB6VKGj9VNi6BIMR9Xr6U\nG2E1t6Rbsuh0xbLOMLZ5MvG0pbiD5rnrs8weqki75sE0wPkjBN1EIVEq+i6UM6su\nu4kj1JiqPh+8pV6pc8mMWQ+892poxnjRzAK7priIRQN2YKrN1jkuUzOrhWuAOJSY\n247BebwdYd5gH/F4cpoS6xkC38s6Fp61SmiwWvOqaersDeGsM6gjfX9C2JFoPu9Z\nqzYusa7p47frSjkpMyVInchmiJYEeIUZATmKQ1gc6QKBgQD2A+QmgZ3l0aOWq70r\nctkbEQAc4vRcnh4nrXzrQfPHosJXCpRU6hgKiV6ab4LsNEDGo6h82zbnLSVkSBkJ\n/z+KYBB2y8i3xC8DaEV+d4hFvYFrFR0WqBjh/qZXIiB0FeQ4LXCg4AHYHJwk92Du\nwMKzM0Y0lm5DyoXgb+0d+1OF3QKBgQDOk3yDhRvksrPHRFJAVL67vcVz204IGZ/4\n8TflaCylnGCyWRjdupIk848Tx02nMqwM7b1pOz0NWtIqjpVaW8fS4iS0uQskHneM\nHJaNjf6aC2klzZ/9VFZYNMcOu4ki2Zz641mROUccAT7hpE6WlD3zmXR4Unmuf6Vp\n/+DfLdeonQKBgAPE033zhmO67nKkduVvgPv1KrdGks/IbFXXRo6kGAP67lc/Bj62\nx1+B8z0ScEMGGefxIeenxBOOkYATyq5ohqSsDBSF0rFeBApdUpM5aZEH8i+dxzBN\nqvPrXsj+8NhWbYSezZbpV53j8lBuqcF+mnz8UBsGIvJO6/YgQNWwv/rRAoGAegqM\nHy8+gWhJ6cmlRjhKzqOYyY+glAx/hBUOTsuyxMyUHAmjNSuKN6ZkuuyeJc878g9q\nPYcv1Hn5fAbsmYtrjFzqDpLb0CTnv7EMCOkAp4ViQ2Etyf5PXKEhkMSeiiZCJb63\nJaLPLe5WdfwaKb++sfHQ61zeYocq9GqlMXTl2ckCgYEAiQI9u9r/gLPcmETtX2Pm\nwNBwMN2M4gSeDiw6/vCt/IRt/n8q5Eox6pMYGisJQprBUi18mT+algl0/xBU9sIP\nGsgzjd7BzjG97ilOuHPXAfoBFa48NYoZsBPncinMY/O86YI/fFH0aC5JXJOZDr5q\nZoZy0m12TC27znRBAfL5Vyo=\n-----END PRIVATE KEY-----\n",
+  "client_email": "sentiment@astute-age-254400.iam.gserviceaccount.com",
+  "client_id": "101851537202346187889",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/sentiment%40astute-age-254400.iam.gserviceaccount.com"
+}

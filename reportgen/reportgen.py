@@ -23,7 +23,7 @@ def main(symbol=None):
     styles = getSampleStyleSheet()
     styles.add(ParagraphStyle(name='Justify', alignment=TA_JUSTIFY))
 
-    ptext = '<font size=9>Thank you for using Stock4! Below is the report you asked for. The forecast has been made from an ARIMA' \
+    ptext = '<font size=9>Thank you for using Stock5! Below is the report you asked for. The forecast has been made from an ARIMA' \
             ' model that uses historical data to predict future data. Assess the information below as you will. ' \
             '' \
             'The blue line is the projected, the dots are the actual.' \

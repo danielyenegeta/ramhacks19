@@ -1,20 +1,39 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>WhoMadeThis</title>
+    <title>WhoMadeThis</title>
 </head>
 <body>
-	{% extends "base.html" %}
-    {% block content %}
+{% extends "base.html" %}
+{% block content %}
+<div class="bg-light py-5">
+  <div class="container py-5">
+    <div class="row mb-4">
+      <div class="col-lg-5">
+        <h2 class="display-4 font-weight-light">Our team</h2>
+        <p class="font-italic text-muted">We are both Software Developers specializing in Full Stack Development and Machine Learning at the University of Virginia. </p>
+      </div>
+    </div>
 
-    <h1> About Flask </h1>
-    <p> Flask is a micro web framework written in Python.</p>
-    <p> Applications that use the Flask framework include Pinterest,
-      LinkedIn, and the community web page for Flask itself.</p>
-		<h1> About Us </h1>
-		<p> Daniel Yenegeta and Zabih Yousouf are fourth-years at the University of Virginia. They both have
-		interests in web development and machine learning.</p>
+    <div class="row text-center">
+      <!-- Team item-->
+      <div class="col-xl-6 col-sm-6 mb-5">
+        <div class="bg-white rounded shadow-sm py-5 px-4"><img src="https://res.cloudinary.com/mhmd/image/upload/v1556834130/avatar-3_hzlize.png" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+          <h5 class="mb-0">Zabih Yousuf</h5><span class="small text-uppercase text-muted">4th Computer Science Major</span>
+        </div>
+      </div>
+      <!-- End-->
 
-    {% endblock %}
+      <!-- Team item-->
+      <div class="col-xl-6 col-sm-6 mb-5">
+        <div class="bg-white rounded shadow-sm py-5 px-4"><img src="https://res.cloudinary.com/mhmd/image/upload/v1556834130/avatar-3_hzlize.png" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+          <h5 class="mb-0">Daniel Yenegeta</h5><span class="small text-uppercase text-muted">4th Computer Science Major</span>
+        </div>
+      </div>
+      <!-- End-->
+    </div>
+  </div>
+</div>
+{% endblock %}
 </body>
 </html>

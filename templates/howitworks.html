@@ -1,20 +1,42 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>HowItWorksadsf</title>
+    <title>HowItWorksadsf</title>
 </head>
 <body>
-	{% extends "base.html" %}
-    {% block content %}
+{% extends "base.html" %}
+{% block content %}
 
-    <h1> About Flask </h1>
-    <p> Flask is a micro web framework written in Python.</p>
-    <p> Applications that use the Flask framework include Pinterest,
-      LinkedIn, and the community web page for Flask itself.</p>
-		<h1> Our Project </h1>
-		<p> We scraped economic data to predict changes in the stock market. Users are able to enter a stock
-			and download a report generated for that stock based on our findings. </p> 
+<div class="bg-light py-5">
+    <div class="container py-5">
+        <div class="row mb-4">
+            <div class="col-lg-5">
+                <h2 class="display-4 font-weight-light">Our Project</h2>
+            </div>
+            <p>Stock5 allows users to assess the health of stock symbols. It does this by first scraping economical sites
+            to retreive information on how the economy is doing (GDP, Unemployment Rate), then it
+            creates a forecast using FBProphet from that data. In the end, the user gets a report on the forecast and
+            how the stock is doing. </p>
+        </div>
+    </div>
+    <div class="container">
+    <ul class="list-group list-group-flush">
+            <p class="h2" style="margin: 2em;">Technologies used:</p>
+            <li class="list-group-item"">AWS</li>
+            <li class="list-group-item">FBProphet</li>
+            <li class="list-group-item">Flask</li>
+            <li class="list-group-item">Bootstrap4</li>
+        </ul>
+        <ul class="list-group list-group-flush">
+            <p class="h2" style="margin:2em;">What we could've done better</p>
+            <li class="list-group-item">More Analysis on the Stock symbol</li>
+            <li class="list-group-item">Used a database to hold all scraping information.</li>
+            <li class="list-group-item">Hosted the site for a much easier demo</li>
+        </ul>
+     </div>
+</div>
 
-    {% endblock %}
+
+        {% endblock %}
 </body>
 </html>

@@ -1,6 +1,1 @@
-"en-us",
-"en-gb",
-"en-ca"
-"en,de;q=0.8,de-de;q=0.5,en-us;q=0.3",
-"en,de;q=0.8,de-at;q=0.5,en-uk;q=0.3",
-"en-US,en;q=0.8"
+en-us%en-gb%en-ca%en,de;q=0.8,de-de;q=0.5,en-us;q=0.3%en,de;q=0.8,de-at;q=0.5,en-uk;q=0.3%en-US,en;q=0.8

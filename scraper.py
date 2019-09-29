@@ -3,14 +3,27 @@ import requests
 import time
 
 
-def openfile(filename=None):
-    global USER_AGENTS
+def openuseragents(filename=None):
+    temp = list()
     with open("/Users/zabih/Documents/ramhacks19/data/" + filename, 'r+') as f:
-        lines = f.read().strip().split(",")
-        return lines
+        lines = f.read().strip("\"").split(",")
+        for line in lines:
+            line = line.rstrip()
+            temp.append(line)
+    return lines
 
 
-USER_AGENTS = openfile(filename="browser_data.txt")
+def openfile(filename=None):
+    temp = list()
+    with open("/Users/zabih/Documents/ramhacks19/data/" + filename, 'r+') as f:
+        lines = f.read().split("%")
+        for line in lines:
+            line = line.rstrip()
+            temp.append(line)
+    return lines
+
+
+USER_AGENTS = openuseragents(filename="browser_data.txt")
 proxy_pass = openfile(filename='proxies.txt')
 ACCEPT = openfile(filename='accept.txt')
 ACCEPT_LANGUAGE = openfile(filename='accept_language.txt')
@@ -36,7 +49,7 @@ def open_url(url):
               'Accept-Language': get_random(ACCEPT_LANGUAGE),
               'Accept': get_random(ACCEPT),
               'Connection': 'Keep-Alive', }
-
+    print(header)
     proxy = proxy_pass
     page = None
     for _ in range(5):
@@ -60,8 +73,11 @@ def open_url(url):
                 print("Error code ", e.code)
             print(f"Exception {e}")
             time.sleep(10)
-    else:  # all ntries failed
+    else:
         print("\n\nURL OPEN FAILED ALL RETRIES... SLEEPING FOR 2 MINS \n\n")
         time.sleep(120)
 
     return page.content
+
+
+print(open_url('https://www.alphavantage.co/query?function=TIME_SERIES_MONTHLY&symbol=MMM&apikey=MV0AQTRW52L538UY'))

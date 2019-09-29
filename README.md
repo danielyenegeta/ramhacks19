@@ -40,7 +40,10 @@ after that it will ask for an access key. Use this.
 Access key = AKIAIC5X5TGNGNZBRTEA
 Secret key = hU+Hn/KJUkKjy5KF6xY4loINbJkVIRVmQwKdhMoX
 ```
-then type 
+
+after that, click enter all the way till your out of the menu. 
+
+Then type 
 
 ```
 export FLASK_APP=hello.py

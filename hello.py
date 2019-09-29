@@ -2,6 +2,7 @@ from flask import Flask, render_template, send_from_directory
 from flask_sqlalchemy import SQLAlchemy
 import boto3, botocore
 import driver
+import os
 
 app = Flask(__name__, static_folder="static", template_folder="templates")
 app.config.from_object('config')
@@ -26,15 +27,22 @@ def download(filename):
     driver.main(filename)
     KEY = filename+".pdf" # replace with your object key
 
-    # s3 = boto3.resource('s3')
-    #
-    # try:
-    #     s3.Bucket(BUCKET_NAME).download_file(KEY, filename+'report.txt')
-    # except botocore.exceptions.ClientError as e:
-    #     if e.response['Error']['Code'] == "404":
-    #         print("The object does not exist.")
-    #     else:
-    #         raise
+    # Create an S3 client
+    s3 = boto3.client('s3')
+    s3.upload_file(KEY, BUCKET_NAME, KEY)
+    os.remove(KEY)
+
+
+    s3 = boto3.resource('s3')
+
+    try:
+        s3.Bucket(BUCKET_NAME).download_file(KEY, filename+'report.pdf')
+    except botocore.exceptions.ClientError as e:
+        if e.response['Error']['Code'] == "404":
+            print("The object does not exist.")
+        else:
+            raise
+
     return render_template('/home.html')
 
 if __name__ == '__main__':

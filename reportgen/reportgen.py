@@ -7,7 +7,7 @@ from reportlab.lib.units import inch
 
 def main(symbol=None):
 
-    doc = SimpleDocTemplate("form_letter.pdf", pagesize=letter,
+    doc = SimpleDocTemplate(symbol+".pdf", pagesize=letter,
                             rightMargin=72, leftMargin=72,
                             topMargin=72, bottomMargin=18)
     Story = []

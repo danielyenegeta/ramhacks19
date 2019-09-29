@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HowItWorksadsf</title>
+  <script>
+    function print() {
+      location.replace("/getreport/"+document.getElementById("stock").value+"/");
+  }
+</script>
+</head>
+<body>
+	{% extends "base.html" %}
+    {% block content %}
+
+    <div class="jumbotron">
+  		<h1 class="display-4">Stock4</h1>
+  		<p> This is a hackathon submission for Ramhacks2019 that allows users to forecast the stock prices for stock symbols based on quantitative and qualitative variables. </p>
+  		<!-- <hr class="my-4"> -->
+  		<p>To learn more about the project and how it works, click the link below.</p>
+  		<p class="oneandhalf">
+  			<a class="btn btn-primary btn-lg" href="/howitworks" role="button">Learn more</a>
+  		</p>
+  	</div>
+  	<div>
+      <form>
+        <h4 style="font-weight:normal">Enter a symbol here</h4>
+        <div class="div1">
+    		<input class="form-control" type="text" placeholder="Default input" id="stock">
+        </div>
+        <a class="btn btn-primary" onclick="print()">Download</a>
+      </form>
+  	</div>
+
+    {% endblock %}
+
+</body>
+</html>

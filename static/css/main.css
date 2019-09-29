@@ -1,4 +1,8 @@
-p {
+/* p {
 	font-family: 'Mansalva', cursive;
-	margin: 10em;
+	margin: 50em;
+	line-height: normal;
+} */
+#div1 {
+	padding-bottom: 75px;
 }

@@ -3,53 +3,32 @@
 <head>
 	<title>Stock4</title>
 	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	<link href="https://fonts.googleapis.com/css?family=Mansalva&display=swap" rel="stylesheet">
-<!--	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css') }}">-->
+	<!-- <link href="https://fonts.googleapis.com/css?family=Mansalva&display=swap" rel="stylesheet"> -->
+	<link rel="stylesheet" type="text/css" href="static/css/main.css">
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </head>
 <body>
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-		<a class="navbar-brand" href="#">Stock4</a>
+		<a class="navbar-brand" href="/">Stock4</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
 		<div class="collapse navbar-collapse" id="navbarNav">
 			<ul class="navbar-nav">
 				<li class="nav-item active">
-					<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+					<a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#">How it works</a>
+					<a class="nav-link" href="/howitworks">How it works</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#">Who made it</a>
+					<a class="nav-link" href="/whomadethis">Who made it</a>
 				</li>
 			</ul>
 		</div>
 	</nav>
-	<div class="jumbotron">
-		<h1 class="display-4">Stock4</h1>
-		<p class="lead">This is a hackathon submission for Ramhacks2019 that allows users to forecast the stock prices for stock symbols based on quantitative and qualitative variables. </p>
-		<hr class="my-4">
-		<p>To learn more about the project and how it works, click the link below.</p>
-		<p class="lead">
-			<a class="btn btn-primary btn-lg" href="howitworks.html" role="button">Learn more</a>
-		</p>
-	</div>
-	<div>
-		<h1>Enter a symbol here</h1>
-		<input class="form-control" type="text" placeholder="Default input">
-	</div>
+	<div id="content">{% block content %}{% endblock %}</div>
 </body>
 </html>
-
-
-
-
-
-
-
-
-

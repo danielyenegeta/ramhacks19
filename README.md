@@ -18,10 +18,13 @@ python3+
 
 ### Installing
 
-First download all modules from the requirements.txt
-
+First download all modules from the requirements.txt. 
 ```
 pip install -r requirements.txt
+```
+Although this is not recommended, listed out our public keys in the repository. In order to run the app, you must have downloaded aws cli in the command line. Once you have that type
+```
+aws configure (it will then ask for 
 ```
 then type 
 

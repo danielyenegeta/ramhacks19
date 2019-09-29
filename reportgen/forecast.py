@@ -4,7 +4,7 @@ from matplotlib import pyplot as plt
 import matplotlib as mpl
 
 def main():
-    df = pd.read_csv('/Users/zabih/Documents/ramhacks19/time_data.csv')
+    df = pd.read_csv('../ramhacks19/time_data.csv')
 
     m = Prophet()
     m.fit(df)
